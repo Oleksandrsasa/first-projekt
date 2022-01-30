@@ -1,7 +1,27 @@
+"use strict";
+
+const number0fFilms = +prompt('Скільки Фільмів ви вже подивились?');
+
+const personalMovieDB = {
+    count: number0fFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const a = prompt('один із останніх фільмів який ви подивились?', ''),
+    b = prompt('наскільки ви цінуєте його?', ''),
+    c = prompt('один із останніх фільмів який ви подивились?', ''),
+    d = prompt('наскільки ви цінуєте його?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
 
 
-// console.log('arr' + " - object");
-
+// const  + promt питання це переменная
+// якщо +promt то це вже число
 
 // let incr = 10,
 //     decr = 10;
